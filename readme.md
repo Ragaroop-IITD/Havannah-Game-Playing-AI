@@ -123,7 +123,7 @@ A board of size N is represented as a numpy array of size $(2N-1, 2N-1)$. The en
 
 The state of the board is represented using the following coordinate frame : 
 
-![Screenshot%202024-08-26%20at%2012.58.41%E2%80%AFAM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/17c8da84-ab62-453b-a9a6-e2529d82f67c/61dd9214-f902-4c60-a73f-5058476cf8f2/0c232c95-a8d3-48bb-9b47-5f1095f2b4df.png)
+![Screenshot%202024-08-26%20at%2012.58.41%E2%80%AFAM.png](https://github.com/Ragaroop-IITD/Havannah-Game-Playing-AI/blob/main/images/Screenshot%25202024-08-26%2520at%252012.58.41%25E2%2580%25AFAM.png)
 
 The topmost layer of cells (highlighted in red on the left) constitutes Row 0.
 
