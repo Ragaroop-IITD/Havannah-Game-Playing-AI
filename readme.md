@@ -14,7 +14,7 @@ Havannah is a board game played on a hexagonal grid of varying sizes. Two player
 
 A board looks like the following, and in this state, players 1 and 2 have kept their pieces at (2,3) and (3,4) respectively, and player 1 is next to move : 
 
-![image](images/Screenshot 2024-09-06 at 11.22.57 AM.png)
+![images/Screenshot 2024-09-06 at 11.22.57 AM.png](https://github.com/Ragaroop-IITD/Havannah-Game-Playing-AI/blob/main/images/Screenshot%202024-09-06%20at%2011.22.57%E2%80%AFAM.png)
 
 ## Winning Criteria
 
@@ -22,15 +22,15 @@ A win is declared when a player is successful in making any of the following thr
 
 Bridge
 
-![Screenshot 2024-08-31 at 2.29.31 AM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/17c8da84-ab62-453b-a9a6-e2529d82f67c/f1670ac4-b1f1-463b-9794-094c623d515b/fabef0d7-5705-47ab-aed5-c13881ce6cb0.png)
+![bridge](https://github.com/Ragaroop-IITD/Havannah-Game-Playing-AI/blob/main/images/bridge.png)
 
 Fork
 
-![Screenshot 2024-08-31 at 2.30.30 AM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/17c8da84-ab62-453b-a9a6-e2529d82f67c/2f05fffb-f8d0-4af1-946a-0c36da90e84f/e05b925c-80f9-459e-80c9-f2355eb76097.png)
+![Screenshot 2024-08-31 at 2.30.30 AM.png](https://github.com/Ragaroop-IITD/Havannah-Game-Playing-AI/blob/main/images/fork.png)
 
 Ring
 
-![Screenshot 2024-08-31 at 2.30.06 AM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/17c8da84-ab62-453b-a9a6-e2529d82f67c/d6b0a96e-7e8b-48a4-ac1b-9c87df87c76b/46d5714d-a5e6-45a2-ac4c-d88b7db4be0f.png)
+![Screenshot 2024-08-31 at 2.30.06 AM.png](https://github.com/Ragaroop-IITD/Havannah-Game-Playing-AI/blob/main/images/ring.png)
 
 - A **Fork** in Havannah occurs when three (or more) different edges of the board are connected through a path of adjacent, same-coloured cells. A cell is considered part of an edge if it lies on the boundary of the board but is not a corner. Importantly, corner cells are not part of any edge. The figure illustrates the yellow player creating a fork by connecting the edge cells at (0,5), (2,6), and (5,4). In this example, the yellow player successfully connects three edge cells on different edges through a continuous path.
 - A **Bridge** is a path (a sequence of adjacent, same-coloured cells) that connects any two corners of the board. Note that there are 6 corners on any given board. The figure above illustrates an example where the red player creates a bridge connecting the corners at coordinates (6,3) and (0,0). It is important to note that (1,0) is not a corner but an edge.
