@@ -160,16 +160,17 @@ Here we are implementing a Havanaah Playing AI bot using Monte Carlo Simulation 
 2. **Use of immediate check_wins**:
    we wrote a this function to prevent mate in one moves either by the opponent or cashing our mate in one move.
 
-3.**Use of different heuristics**:
-   (i) Locality heuristic : It assigns score to keep the move nearer to the player filled tiles of the board in the form of virtual connections,neighbours and second layer neighbours.
+3. **Use of different heuristics**:
+(i) **Locality heuristic :** It assigns score to keep the move nearer to the player filled tiles of the board in the form of virtual connections,neighbours and second layer neighbours.
    
-   (ii) Local Reply heuristic : It assigns score to keep the move nearer to the opponent filled tiles of the board to prevent opponent from forming the large groups and preventing virtual connections of the opponent.
+(ii) **Local Reply heuristic :** It assigns score to keep the move nearer to the opponent filled tiles of the board to prevent opponent from forming the large groups and preventing virtual connections of the opponent.
    
-   (iii) Maintaining Virtual connections : If the opponent tries to block already virtually connected tiles , then this heuristic assigns score for keeping  a move that makes use of the virtual connection.
+(iii) **Maintaining Virtual connections :** If the opponent tries to block already virtually connected tiles , then this heuristic assigns score for keeping  a move that makes use of the virtual connection.
    
-   (iv) Group Size: It assigns score for forming larger groups which gives a advantage in larger boards.
+(iv) **Group Size :** It assigns score for forming larger groups which gives a advantage in larger boards.
    
-   (v) Edge-Corner Connectivity: It assigns score for connecting groups for edge corner connectivity.
+(v) **Edge-Corner Connectivity :** It assigns score for connecting groups for edge corner connectivity.
+   
    These heuristics are all combined in to one heuristic function by adding weights to them according to their importance. So, heuristic working fine most of the times.
 
 In this approach we used Basic Monte Carlo with optimization using the heuristic to get the optimal move for the AI which increase the rating of our bot and makes it play the best move possible.
