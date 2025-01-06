@@ -146,3 +146,24 @@ A few utility functions have been provided in  `havannah/helper.py` . You may us
 7. `get_vertex_at_corner(corner, dim)`  : Returns the position on of a `corner` of the board , and a size `dim` board.
 8. `get_edge(pos, dim)`  : Returns the edge on which a position  `pos` lies for a size `dim` board, returns -1 if not an edge piece.
 9. `get_corner(pos, dim)`  : Returns the corner on which a position  `pos` lies for a size `dim` board, returns -1 if not a corner piece.
+
+
+## Approach 
+Here we are implementing a Havanaah Playing AI bot using Monte Carlo Simulation combined with heuristics.The detailed explanations of techniques used was given below:
+
+1.**Adverserial Search using Monte Carlo**:
+   -In Monte Carlo we are using Rapid Action Value Estimation(RAVE) for the selection of the nodes and we are using the heuristic function written by us to give te advantage in selecting the moves apart from RAVE.
+   -We are backpropogating after a terminal state in the simulation of the selected node , so the heuristic knowlege is added to the MCTS nodes for future selecton.
+   -We are comparing the best move based on number of times the node is visited using the rave_uct and get_best_child functions.
+   -If our heuristic goes terribily wrong due to MCTS it will be identifying it and updates the heuristic knowledge accordingly
+2. **Use of immediate check_wins**:
+   we wrote a this function to prevent mate in one moves either by the opponent or cashing our mate in one move.
+3.**Use of different heuristics**:
+   (i) Locality heuristic : It assigns score to keep the move nearer to the player filled tiles of the board in the form of virtual connections,neighbours and second layer neighbours.
+   (ii) Local Reply heuristic : It assigns score to keep the move nearer to the opponent filled tiles of the board to prevent opponent from forming the large groups and preventing virtual connections of the opponent.
+   (iii) Maintaining Virtual connections : If the opponent tries to block already virtually connected tiles , then this heuristic assigns score for keeping  a move that makes use of the virtual connection.
+   (iv) Group Size: It assigns score for forming larger groups which gives a advantage in larger boards.
+   (v) Edge-Corner Connectivity: It assigns score for connecting groups for edge corner connectivity.
+   These heuristics are all combined in to one heuristic function by adding weights to them according to their importance. So, heuristic working fine most of the times.
+
+In this approach we used Basic Monte Carlo with optimization using the heuristic to get the optimal move for the AI which increase the rating of our bot and makes it play the best move possible.
