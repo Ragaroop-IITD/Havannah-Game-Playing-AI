@@ -14,7 +14,7 @@ Havannah is a board game played on a hexagonal grid of varying sizes. Two player
 
 A board looks like the following, and in this state, players 1 and 2 have kept their pieces at (2,3) and (3,4) respectively, and player 1 is next to move : 
 
-![Screenshot 2024-09-06 at 11.22.57 AM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/17c8da84-ab62-453b-a9a6-e2529d82f67c/e58e406c-36f0-44d6-b7ec-f938e56974ce/Screenshot_2024-09-06_at_11.22.57_AM.png)
+![Screenshot 2024-09-06 at 11.22.57 AM.png](Images/Screenshot_2024-09-06_at_11.22.57_AM.png)
 
 ## Winning Criteria
 
